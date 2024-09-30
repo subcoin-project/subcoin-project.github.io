@@ -3,62 +3,62 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+    {
+        title: 'Decentralized Fast Sync',
+        Svg: require('@site/static/img/blockchain.svg').default,
+        description: (
+            <>
+                Subcoin enables new Bitcoin participants to quickly sync the latest Bitcoin state in a decentralized manner,
+                achieving the fast sync functionality of Bitcoin Core without depending on a trusted snapshot provider.
+            </>
+        ),
+    },
+    {
+        title: 'Written in Rust',
+        Svg: require('@site/static/img/rust.svg').default,
+        description: (
+            <>
+                As a high-performance system programming language, Rust is well-regarded for its safety and concurrency.
+                Its widespread adoption in the blockchain space makes it an excellent choice for fostering new contributors to the Bitcoin ecosystem.
+            </>
+        ),
+    },
+    {
+        title: 'Built on Polkadot SDK',
+        Svg: require('@site/static/img/polkadot.svg').default,
+        description: (
+            <>
+                Leveraging the scalability and flexibility of the industry-leading <a href="https://github.com/paritytech/polkadot-sdk" target="_blank">Polkadot-SDK</a> (formerly known as Substrate),
+                Subcoin has the potential to evolve into a robust and feature-rich Bitcoin software with production-level infrastructure.
+            </>
+        ),
+    },
 ];
 
 function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
+    return (
+        <div className={clsx('col col--4')}>
+            <div className="text--center">
+                <Svg className={styles.featureSvg} role="img" />
+            </div>
+            <div className="text--center padding-horiz--md">
+                <Heading as="h3">{title}</Heading>
+                <p>{description}</p>
+            </div>
+        </div>
+    );
 }
 
 export default function HomepageFeatures() {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section className={styles.features}>
+            <div className="container">
+                <div className="row">
+                    {FeatureList.map((props, idx) => (
+                        <Feature key={idx} {...props} />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }
