@@ -3,10 +3,10 @@ facebook:
   permalink: /facebook
   description: Facebook tag description
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+announcement:
+  label: announcement
+  permalink: /announcement
+  description: Announcement tag description
 
 docusaurus:
   label: Docusaurus
@@ -17,3 +17,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+sync:
+  label: Syncing
+  permalink: /syncing
+  description: Bitcoin syncing
