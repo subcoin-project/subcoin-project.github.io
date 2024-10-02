@@ -9,11 +9,11 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Subcoin',
-    tagline: 'a Bitcoin Full Node Built in Rust Using Polkadot-SDK',
+    tagline: 'Bitcoin Full Node Built in Rust Using Polkadot-SDK',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
-    url: 'https://your-docusaurus-site.example.com',
+    url: 'https://subcoin-project.github.io',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
@@ -44,7 +44,7 @@ const config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                        'https://github.com/subcoin-project/subcoin-project.github.io/tree/main/',
                 },
                 blog: {
                     showReadingTime: true,
@@ -55,7 +55,7 @@ const config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/subcoin-project/subcoin-project.github.io/tree/main/blog/',
+                        'https://github.com/subcoin-project/subcoin-project.github.io/tree/main/',
                     // Useful options to enforce blogging best practices
                     onInlineTags: 'warn',
                     onInlineAuthors: 'warn',
@@ -80,13 +80,18 @@ const config = {
                     src: 'img/logo.svg',
                 },
                 items: [
+                    {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
                         position: 'left',
-                        label: 'Tutorial',
+                        label: 'User Guide',
                     },
-                    {to: '/blog', label: 'Blog', position: 'left'},
+                    {
+                        href: 'https://subcoin-project.github.io/subcoin/book/',
+                        label: 'Dev Guide',
+                        position: 'left',
+                    },
                     {
                         href: 'https://github.com/subcoin-project/subcoin',
                         label: 'GitHub',
@@ -114,8 +119,8 @@ const config = {
                                 href: 'https://t.me/subcoin_project',
                             },
                             {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/subcoin_project',
+                                label: 'X',
+                                href: 'https://x.com/subcoin_project',
                             },
                         ],
                     },

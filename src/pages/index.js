@@ -15,7 +15,10 @@ function HomepageHeader() {
                 <Heading as="h1" className="hero__title">
                     {siteConfig.title}
                 </Heading>
-                <p className="hero__subtitle">{siteConfig.tagline}</p>
+                <p className="hero__subTitle">{siteConfig.tagline}</p>
+                <p className={styles.introText}>
+                    Unlock the Potential of Decentralized Fast Sync for Bitcoin — and more
+                </p>
                 <div className={styles.buttons}>
                     <Link
                         className="button button--secondary button--lg"
