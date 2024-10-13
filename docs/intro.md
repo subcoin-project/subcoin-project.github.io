@@ -2,46 +2,14 @@
 sidebar_position: 1
 ---
 
-# Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to **Subcoin**, an innovative project aimed at introducing decentralized fast sync for the Bitcoin network. By leveraging the power of [Polkadot-SDK (formerly Substrate)](https://github.com/paritytech/polkadot-sdk), Subcoin delivers a more efficient Bitcoin chain syncing process.
 
-## Getting Started
+The key feature of Subcoin is decentralized fast sync, which allows new Bitcoin nodes to quickly catch up with the latest state of the blockchain without needing to download and verify every block from the genesis. This drastically reduces the time and computational resources required to join the Bitcoin network.
 
-Get started by **creating a new site**.
+Additionally, Subcoin enhances Bitcoin Core's fast sync by enabling the download of a UTXO set (compatible with Bitcoin Core) directly from the Subcoin P2P network, removing the dependency on trusted snapshot providers in Bitcoin Core.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Subcoin’s Vision
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Subcoin envisions building an ecosystem where Bitcoin benefits from modern blockchain architectures like Polkadot-SDK. Beyond solving the challenge of slow Bitcoin syncing, Subcoin paves the way for exciting new use cases, including new Bitcoin wallet integration, custom indexers, Bitcoin Layer 2 solutions, and more.
