@@ -35,6 +35,19 @@ const config = {
         locales: ['en'],
     },
 
+    stylesheets: [
+        {
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+          type: 'text/css',
+        },
+        {
+          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+          type: 'text/css',
+          integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+          crossorigin: 'anonymous',
+        },
+    ],
+
     presets: [
         [
             'classic',
@@ -79,8 +92,8 @@ const config = {
             navbar: {
                 title: 'Subcoin',
                 logo: {
-                    alt: 'My Site Logo',
-                    src: 'img/logo.svg',
+                    alt: 'Subcoin Logo',
+                    src: 'img/subcoin-logo.svg',
                 },
                 items: [
                     {to: '/blog', label: 'Blog', position: 'left'},
@@ -97,8 +110,15 @@ const config = {
                     },
                     {
                         href: 'https://github.com/subcoin-project/subcoin',
-                        label: 'GitHub',
                         position: 'right',
+                        className: 'header-github-link',
+                        'aria-label': 'GitHub repository',
+                    },
+                    {
+                        href: 'https://x.com/subcoin_project',
+                        position: 'right',
+                        className: 'header-twitter-link',
+                        'aria-label': 'Twitter profile',
                     },
                 ],
             },

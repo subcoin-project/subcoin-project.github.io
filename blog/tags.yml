@@ -18,7 +18,7 @@ hola:
   permalink: /hola
   description: Hola tag description
 
-sync:
+syncing:
   label: Syncing
   permalink: /syncing
   description: Bitcoin syncing

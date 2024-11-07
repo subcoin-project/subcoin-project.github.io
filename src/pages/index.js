@@ -35,8 +35,8 @@ export default function Home() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />">
+            title={`Bitcoin Node in Substrate`}
+            description="Subcoin is a Rust Bitcoin Full Node in Substrate, featured in Decentralized Fast Sync. />">
             <HomepageHeader />
             <main>
                 <HomepageFeatures />

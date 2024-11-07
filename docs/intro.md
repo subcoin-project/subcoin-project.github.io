@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# 📘 Introduction
 
 Welcome to **Subcoin**, an innovative project aimed at introducing decentralized fast sync for the Bitcoin network. By leveraging the power of [Polkadot-SDK (formerly Substrate)](https://github.com/paritytech/polkadot-sdk), Subcoin delivers a more efficient Bitcoin chain syncing process.
 

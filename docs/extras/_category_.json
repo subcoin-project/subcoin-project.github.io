@@ -1,7 +1,8 @@
 {
-  "label": "Extras",
+  "label": "✨ Extras",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "extras",
   }
 }
