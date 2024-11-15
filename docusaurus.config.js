@@ -108,6 +108,7 @@ const config = {
                         label: 'Dev Guide',
                         position: 'left',
                     },
+                    {to: '/docs/donate', label: 'Donate', position: 'left'},
                     {
                         href: 'https://github.com/subcoin-project/subcoin',
                         position: 'right',
