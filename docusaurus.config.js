@@ -79,8 +79,8 @@ const config = {
             navbar: {
                 title: 'Subcoin',
                 logo: {
-                    alt: 'My Site Logo',
-                    src: 'img/logo.svg',
+                    alt: 'Subcoin Logo',
+                    src: 'img/subcoin-logo.svg',
                 },
                 items: [
                     {to: '/blog', label: 'Blog', position: 'left'},
@@ -95,10 +95,18 @@ const config = {
                         label: 'Dev Guide',
                         position: 'left',
                     },
+                    {to: '/docs/donate', label: 'Donate', position: 'left'},
                     {
                         href: 'https://github.com/subcoin-project/subcoin',
-                        label: 'GitHub',
                         position: 'right',
+                        className: 'header-github-link',
+                        'aria-label': 'GitHub repository',
+                    },
+                    {
+                        href: 'https://x.com/subcoin_project',
+                        position: 'right',
+                        className: 'header-twitter-link',
+                        'aria-label': 'Twitter profile',
                     },
                 ],
             },
