@@ -83,7 +83,6 @@ const config = {
                     src: 'img/subcoin-logo.svg',
                 },
                 items: [
-                    {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
@@ -95,6 +94,7 @@ const config = {
                         label: 'Dev Guide',
                         position: 'left',
                     },
+                    {to: '/blog', label: 'Blog', position: 'left'},
                     {to: '/docs/donate', label: 'Donate', position: 'left'},
                     {
                         href: 'https://github.com/subcoin-project/subcoin',

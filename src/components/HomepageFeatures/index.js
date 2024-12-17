@@ -1,18 +1,9 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
-    {
-        title: 'Decentralized Fast Sync',
-        Svg: require('@site/static/img/blockchain.svg').default,
-        description: (
-            <>
-                Subcoin enables new Bitcoin participants to quickly sync the latest Bitcoin state in a decentralized manner,
-                achieving the fast sync functionality of Bitcoin Core without depending on a trusted snapshot provider.
-            </>
-        ),
-    },
     {
         title: 'Written in Rust',
         Svg: require('@site/static/img/rust.svg').default,
@@ -33,11 +24,30 @@ const FeatureList = [
             </>
         ),
     },
+    {
+        title: 'Decentralized Fast Sync',
+        Svg: require('@site/static/img/blockchain.svg').default,
+        description: (
+            <>
+                Subcoin node enables new Bitcoin participants to quickly sync the latest Bitcoin state in a decentralized manner,
+                achieving the fast sync functionality of Bitcoin Core without depending on a trusted snapshot provider.
+            </>
+        ),
+    },
+    {
+        title: 'Trustless UTXO Snapshot Provider for Bitcoin Core',
+        Svg: require('@site/static/img/snapshot_provider.svg').default,
+        description: (
+            <>
+                Subcoin provides a dedicated tool <Link to="/docs/basics/download-UTXO-snapshot"> Snapcake </Link> that serves as a trustless UTXO snapshot provider for Bitcoin Core without running a Subcoin node, downloading the Bitcoin state from the Subcoin P2P network and generating a Bitcoin Core-compatible UTXO snapshot which can be directly imported into Bitcoin Core.
+            </>
+        ),
+    },
 ];
 
 function Feature({Svg, title, description}) {
     return (
-        <div className={clsx('col col--4')}>
+        <div className={clsx('col col--6')}>
             <div className="text--center">
                 <Svg className={styles.featureSvg} role="img" />
             </div>
