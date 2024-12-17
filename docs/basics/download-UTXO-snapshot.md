@@ -14,6 +14,8 @@ To download the UTXO snapshot for a specified block, simply use the following co
 snapcake --bootnodes <BOOTNODES> --block-number 840000
 ```
 
+TODO: public bootnodes
+
 ### Notes
 
 - Supported Block:
