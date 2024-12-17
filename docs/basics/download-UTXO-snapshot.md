@@ -22,14 +22,18 @@ TODO: public bootnodes
 
   While snapcake supports downloading the snapshot at any block as long as the peer does not prune the state, only the UTXO snapshot at hardcoded block height 840000 is currently supported for importing into Bitcoin Core.
 
+- Snapshot Format Compatibility:
+
+  The snapshot format may change in future versions of Bitcoin Core. Currently, snapcake supports the snapshot format used in Bitcoin Core v28.0.
+
 - Snapshot integrity:
 
-The expected `sha256sum` for the snapshot at block 840000 is:
+    The expected `sha256sum` for the snapshot at block 840000 is:
 
-```text
-dc4bb43d58d6a25e91eae93eb052d72e3318bd98ec62a5d0c11817cefbba177b
-```
-This checksum matches the one documented in the official [Bitcoin Core pull request](https://github.com/bitcoin/bitcoin/pull/28553#issue-1920247340).
+    ```text
+    dc4bb43d58d6a25e91eae93eb052d72e3318bd98ec62a5d0c11817cefbba177b
+    ```
+    This checksum matches the one documented in the official [Bitcoin Core pull request](https://github.com/bitcoin/bitcoin/pull/28553#issue-1920247340).
 
 ## Verify the Downloaded Snapshot
 
