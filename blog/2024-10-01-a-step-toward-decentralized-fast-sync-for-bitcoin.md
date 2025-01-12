@@ -49,7 +49,7 @@ Subcoin introduces an innovative approach to encapsulating the Bitcoin chain wit
 
 **Subcoin runtime**
 
-Subcoin runtime is a minimalistic Substrate runtime,  comprising two essential pallets:
+Subcoin runtime is a minimalistic Substrate runtime, comprising two essential pallets:
 
 - **frame-system**: This pallet is the core component of the Substrate framework.
 - **pallet-bitcoin**: This pallet tracks the state of the UTXO set on-chain. It processes the inputs and outputs of each Bitcoin transaction embedded in an unsigned extrinsic within the pallet.
@@ -122,17 +122,11 @@ The Proof of Concept implementation has been developed, but several optimization
 ## Future Vision
 
 - **Bitcoin Wallet Integration in polkadot.js.org**
-    
-    A significant future goal is to enable [polkadot.js.org](http://polkadot.js.org/) to support Bitcoin transactions, effectively turning it into a fully functional Bitcoin wallet. This ambitious enhancement would require deep integration of Bitcoin into the Substrate framework, including adjustments to the runtime, the creation of a custom transaction pool, and likely modifications to the [polkadot.js.org](http://polkadot.js.org/) interface.
-    
+  A significant future goal is to enable [polkadot.js.org](http://polkadot.js.org/) to support Bitcoin transactions, effectively turning it into a fully functional Bitcoin wallet. This ambitious enhancement would require deep integration of Bitcoin into the Substrate framework, including adjustments to the runtime, the creation of a custom transaction pool, and likely modifications to the [polkadot.js.org](http://polkadot.js.org/) interface.
 - **Develop a BRC20 Indexer**
-    
-    Expanding Subcoin to include a BRC20 indexer is a straightforward extension that can be implemented during the Bitcoin full sync process. This addition would enhance the decentralization of BRC20 assets, contributing to a more robust and accessible Bitcoin ecosystem.
-    
+  Expanding Subcoin to include a BRC20 indexer is a straightforward extension that can be implemented during the Bitcoin full sync process. This addition would enhance the decentralization of BRC20 assets, contributing to a more robust and accessible Bitcoin ecosystem.
 - **Explore Bitcoin Layer 2 Solutions**
-    
-    The Subcoin team's initial goal was not to build a Bitcoin node in Rust but to explore Bitcoin L2 solutions. With the recent surge in Bitcoin L2 projects, the Subcoin team is still actively seeking innovative ways to enhance the Bitcoin ecosystem, going beyond just creating a Rust client.
-    
+  The Subcoin team's initial goal was not to build a Bitcoin node in Rust but to explore Bitcoin L2 solutions. With the recent surge in Bitcoin L2 projects, the Subcoin team is still actively seeking innovative ways to enhance the Bitcoin ecosystem, going beyond just creating a Rust client.
 
 These ideas represent just the beginning. As Subcoin matures and grows, more possibilities will emerge.
 

@@ -7,14 +7,14 @@
 /* Colors are generated from https://aicolors.co/ and adjusted by ChatGPT. */
 :root {
   /* Primary Colors */
-  --ifm-color-primary: #2C3E50; /* primary-100 */
+  --ifm-color-primary: #2c3e50; /* primary-100 */
   --ifm-color-primary-dark: #57687c; /* primary-200 */
   --ifm-color-primary-darker: #b4c7dd; /* primary-300 */
-  --ifm-color-primary-light: #F7CAC9; /* accent-100 */
+  --ifm-color-primary-light: #f7cac9; /* accent-100 */
   --ifm-color-primary-lighter: #926b6a; /* accent-200 */
 
   /* Link Colors */
-  --ifm-link-color: #1E6091; /* Distinct blue link color */
+  --ifm-link-color: #1e6091; /* Distinct blue link color */
   --ifm-link-hover-color: #144c73; /* Darker shade for hover */
 
   /* Text Colors */
@@ -22,7 +22,7 @@
   --ifm-color-content-secondary: #5c5c5c; /* text-200 */
 
   /* Background Colors */
-  --ifm-background-color: #F2F2F2; /* bg-100 */
+  --ifm-background-color: #f2f2f2; /* bg-100 */
   --ifm-background-secondary-color: #e8e8e8; /* bg-200 */
   --ifm-background-alt: #bfbfbf; /* bg-300 */
 
@@ -32,12 +32,12 @@
 }
 
 /* Dark mode adjustments */
-[data-theme='dark'] {
+[data-theme="dark"] {
   /* Primary Colors */
   --ifm-color-primary: #926b6a; /* accent-200 */
-  --ifm-color-primary-dark: #2C3E50; /* primary-100 */
+  --ifm-color-primary-dark: #2c3e50; /* primary-100 */
   --ifm-color-primary-darker: #57687c; /* primary-200 */
-  --ifm-color-primary-light: #F7CAC9; /* accent-100 */
+  --ifm-color-primary-light: #f7cac9; /* accent-100 */
   --ifm-color-primary-lighter: #b4c7dd; /* primary-300 */
 
   /* Link Colors */
@@ -45,7 +45,7 @@
   --ifm-link-hover-color: #4a93c9; /* Slightly darker for hover */
 
   /* Text Colors */
-  --ifm-color-content: #F2F2F2; /* lightened text-100 for dark mode */
+  --ifm-color-content: #f2f2f2; /* lightened text-100 for dark mode */
   --ifm-color-content-secondary: #e8e8e8; /* bg-200 */
 
   /* Background Colors */
@@ -67,7 +67,7 @@
 }
 
 .header-github-link::before {
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   display: flex;
@@ -85,7 +85,7 @@
 }
 
 .header-twitter-link::before {
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   display: flex;
