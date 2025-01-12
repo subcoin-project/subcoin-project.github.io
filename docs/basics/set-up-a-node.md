@@ -14,10 +14,9 @@ This guide will show you how to connect to Bitcoin network with Subcoin.
 - **Full Node**: A full node prunes historical states, all finalized blocks' states older than a configurable number except the genesis block's state will be pruned. This is 256 blocks from the last finalized one by default. A pruned node this way requires much less space than an archive node.
 - **Light Node**: TODO
 
-
 ### Sync Strategies
 
-There are two strategies to sync the Bitcoin network for new nodes: _Full Sync_ and _Fast Sync_. 
+There are two strategies to sync the Bitcoin network for new nodes: _Full Sync_ and _Fast Sync_.
 
 - **Full Sync**: This will download and replay all the blocks from the genesis to the tip directly from the P2P network (either the Subcoin network or directly from the Bitcoin P2P network). This sync strategy is only necessary for establishing the Subcoin bootnodes when the Subcoin P2P network starts as this process is time-consuming and resources-intensive, possibly taking days to complete depending on the performance of your machine. For the regular users, _Fast Sync_ is usually recommended.
 
@@ -30,9 +29,9 @@ There are two strategies to sync the Bitcoin network for new nodes: _Full Sync_ 
 ```mermaid
 graph TD
     %% Define nodes
-    subcoin_p2p((Subcoin P2P Network)) ---> |Fast Sync|subcoin_node[Subcoin Node] 
-    subcoin_p2p ---> |Full Sync|subcoin_node[Subcoin Node] 
-    bitcoin_p2p((Bitcoin P2P Network)) ---> |Full Sync|subcoin_node 
+    subcoin_p2p((Subcoin P2P Network)) ---> |Fast Sync|subcoin_node[Subcoin Node]
+    subcoin_p2p ---> |Full Sync|subcoin_node[Subcoin Node]
+    bitcoin_p2p((Bitcoin P2P Network)) ---> |Full Sync|subcoin_node
 
     %% Add labels for syncing methods
 
@@ -56,9 +55,9 @@ Although it's technically supported to perform a full sync from the Subcoin p2p 
 Note that the storage usage will grow over time.
 
 - Full Node
-    - SSD with 500GiB of space 
+  - SSD with 500GiB of space
 - Archive Node
-    - SSD with 4TiB of space
+  - SSD with 4TiB of space
 
 ## Syncing Bitcoin Chain
 
