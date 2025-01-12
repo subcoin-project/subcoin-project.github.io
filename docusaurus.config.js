@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Subcoin",
   tagline: "Bitcoin Full Node Built in Rust Using Polkadot-SDK",
-  favicon: "img/favicon.ico",
+  favicon: "img/subcoin-favicon-black.png",
 
   // Set the production url of your site here
   url: "https://subcoin-project.github.io",
